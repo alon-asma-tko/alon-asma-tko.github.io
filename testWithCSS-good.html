@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.85, minimum-scale=0.75, maximum-scale=1.0">
+    <title>Alona's Personal Website</title>
+    <style>
+
+.container {
+    padding: 0 100px;
+    /* padding-left: 0 100px;
+    padding-top: 0 100px; */
+
+
+}
+
+.flex-container {
+            display: flex;
+            justify-content: flex-start; 
+            flex-wrap: wrap; 
+            padding: 0 100px;
+            /* padding-left: 0 100px;
+            padding-top: 0 100px; */
+        }
+
+.text-box {
+    width: 50%; /* Adjust as needed based on the number of text boxes */
+    margin-bottom: 10px;
+}
+
+
+    .cls-1 {
+        font-size: 35px;
+        font-family: Roboto; /* Thin BLACK */
+        font-weight: 300;
+        text-align: justify;
+        padding: 20px;
+        
+    }
+
+    .cls-2 {
+        font-size: 30px;
+    font-family: Roboto-Bold, Roboto; /* bold BLACK */
+    font-weight: 700;
+    text-align: justify;
+    padding: 20px;
+    }
+
+    .cls-3 {
+        font-size: 35px;
+        font-family: Roboto; /* Thin WHITE*/
+        font-weight: 300;
+        color: #ffffff;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .cls-4 {
+        font-size: 30px;
+    font-family: Roboto-Bold, Roboto; /* bold WHITE*/
+    font-weight: 700;
+    color: #ffffff;
+    text-align: justify;
+    padding: 20px;
+    
+    }
+      
+    .cls-5 {
+        font-size:37px;
+    font-family: Roboto-Bold, Roboto; /* bold BLACK TITLE */
+    font-weight: 700;
+    
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    }
+
+    .cls-6 {
+        font-size: 37px;
+    font-family: Roboto-Bold, Roboto; /* bold White TITLE */
+    font-weight: 700;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    .cls-7 {
+        font-size: 50px;
+        font-family: Roboto; /* Thin BLACK */
+        font-weight: 350;
+        text-align: justify;
+        padding: 30px;
+        
+
+    }
+    .cls-8 {
+        font-size: 20px;
+    font-family: Roboto-Bold, Roboto; /* bold WHITE*/
+    font-weight: 700;
+    color: #ffffff;
+    text-align: justify;
+    padding-left: 20px;
+    
+    }
+
+    .blacksection 
+    {
+        background-color: #000; 
+        padding: 0px; 
+       
+    }
+
+
+        nav 
+    {
+        background-color: hsl(0, 0%, 0%); 
+        padding: 10px 0; 
+    }
+
+
+    .footer {
+            background-color: hsl(0, 0%, 0%); 
+            padding: 10px 0; 
+            color: white; 
+            text-align: center; 
+          
+            width: 100%; 
+            bottom: 0; 
+
+            margin-top: auto; 
+            display: flex; 
+            justify-content: flex-start; 
+        }
+        
+    .icon-link:not(:first-child) {
+        margin-left: 20px; 
+        padding-left: 20px;
+        width: 30px; 
+        height: auto; 
+        fill: white; 
+        fill-rule: evenodd;
+
+    }
+        
+    
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none; 
+        color: black; 
+        font-weight: bold; 
+    }
+
+    nav ul li a:hover {
+        color: rgb(114, 114, 114); 
+    }
+
+    a {
+    color: #000000;
+    text-decoration: none;
+    }
+
+      
+* {box-sizing:border-box}
+
+
+
+.skills {
+    width: 50px; 
+    height: 10px; 
+  text-align: right; 
+  padding-top: 0px; 
+  padding-bottom: 0px; 
+  color: white; 
+}
+
+.osint {width: 80%; background-color: #155c32;} /* Orange */
+.phishing {width: 65%; background-color: #800000;} /* Burgundy */
+.counterfeit {width: 60%; background-color: #8B0000;} /* Dark Red */
+.long-term {width: 75%; background-color: #FF8C00;} /* Dark Orange */
+.high-value {width: 70%; background-color: #FF4500;} /* Orange Red */
+.kali-linux {width: 85%; background-color: #94295f;} /* Gold */
+.anti-piracy {width: 90%; background-color: #75580f;} /* Golden Rod */
+.brand-protection {width: 95%; background-color: #FF6347;} /* Tomato */
+.data-analysis {width: 85%; background-color: #09498a;} /* Dodger Blue */
+.c-programming {width: 80%; background-color: #3a084e;} /* Medium Blue */
+.ubuntu {width: 75%; background-color: #4682B4;} /* Steel Blue */
+
+   .nav-link {
+        color: #fff; 
+        font-size: 30px; 
+        font-family: Roboto-Medium, Roboto; 
+        font-weight: 500; 
+        text-decoration: none; 
+    }
+
+    nav ul {
+        
+        padding: 0;
+        margin: 0; 
+        text-align: right; 
+    }
+
+    nav ul li {
+        
+        display: inline;
+        margin-left: 10px; 
+    }
+
+        #name-surname {
+            color: #fff;
+            font-size: 30px; 
+            font-family: Roboto-Bold, Roboto; 
+            font-weight: 700; 
+            
+            vertical-align: middle;
+            
+        }
+        .photo{
+            width: auto; 
+            height: 600px; 
+            margin-right: 20px;
+            margin-top: 20px;
+             float: left;
+             border: 2px solid #000;
+
+        }
+
+
+
+        </style>
+</head>
+
+
+<body>
+
+<!-- test --> 
+<!-- test end DONE--> 
+<nav>
+    <div class="flex-container">
+        <div class="text-box">
+            <span id="name-surname">ALONA SMATKO</span>
+        </div>
+        <div class="text-box">
+            <ul>
+                <li><a href="#Hi_I_m_Alona" class="nav-link">About</a></li>
+                <li><a href="#My_Professional_Experience" class="nav-link">Experience</a></li>
+                <li><a href="#My_Education" class="nav-link">Education</a></li>
+                <li><a href="#My_Skills" class="nav-link">Skills</a></li>
+                <li><a href="#My_Certifications" class="nav-link">Certifications</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- test --> 
+<!-- test end --> 
+<!-- test --> 
+<!-- test end --> 
+
+
+<section id="Hi_I_m_Alona">
+    <div class="container">
+        <br><text id="Hi_I_m_Alona" data-name="Hi, I&apos;m Alona" class="cls-5" transform="translate(0 25)">
+        <tspan x="0" y="0">Hi, I&apos;m Alona</tspan>
+    </text></div>
+
+    <div class="flex-container">
+    <div class="text-box"> 
+        <br>  <br><img src="https://scontent.fcwl1-1.fna.fbcdn.net/v/t39.30808-6/431474562_10211841288824305_249268951573762293_n.jpg?
+        _nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=hmbo2zKWdx0AX-oCFxG&_nc_ht=scontent.fcwl1-1.fna&oh=00_AfA09N5tgsmIFppcRBzyFrsrXiP3GL4OMLSKFFm3chomCw&oe=65FCA217" alt="Profile Picture" class= "photo" >
+    </div>
+<div class="text-box"> 
+  <p class="cls-7">As a Computer Science student with a diverse background in investigations and intelligence, I'm driven by a passion for leveraging technology to tackle complex challenges. With experience in OSINT and online to offline intelligence, I'm transitioning into cybersecurity to stay ahead of evolving threats and make a meaningful impact in safeguarding digital assets. I'm excited to continue my journey armed with technical expertise, analytical prowess, and a dedication to excellence.<br><br<br</p>
+</div>
+</section>
+
+
+
+    <section id="My_Skills" class="blacksection">
+        <div class="container">
+            <br><br> <br><text transform="translate(140 527)"  class="cls-6">
+                <tspan x="0" y="0">My Skills</tspan>
+            <br> <br> </text></div>
+            <div class="flex-container">
+                <div class="text-box"> 
+            <!-- <p class="cls-4"> -->
+                <!-- &bull;&emsp;OSINT<br>
+                &bull;&emsp;Phishing Investigations<br>
+                &bull;&emsp;Counterfeit Investigations<br>
+                &bull;&emsp;Long Term Target Monitoring<br>
+                &bull;&emsp;High Value Target Identification<br>
+                &bull;&emsp;Kali Linux<br>
+                &bull;&emsp;Anti-piracy<br>
+                &bull;&emsp;Brand Protection<br>
+                &bull;&emsp;Data Analysis and Visualisation<br>
+                &bull;&emsp;C Programming Language<br>
+                &bull;&emsp;Ubuntu<br></p></div> -->
+                
+                <p class="cls-8">OSINT</p>
+                <div class="container">
+                  <div class="skills osint">80%</div>
+                </div>
+                
+                <p class="cls-8">Phishing Investigations</p>
+                <div class="container">
+                  <div class="skills phishing">65%</div>
+                </div>
+                
+            
+                <p class="cls-8">High Value Target Identification</p>
+                <div class="container">
+                  <div class="skills high-value">70%</div>
+                </div>
+                
+                <p class="cls-8">Kali Linux</p>
+                <div class="container">
+                  <div class="skills kali-linux">85%</div>
+                </div>
+                
+                <p class="cls-8">Anti-piracy</p>
+                <div class="container">
+                  <div class="skills anti-piracy">90%</div>
+                </div>
+                
+                <p class="cls-8">Brand Protection</p>
+                <div class="container">
+                  <div class="skills brand-protection">95%</div>
+                </div>
+                
+                <p class="cls-8">Data Analysis and Visualisation</p>
+                <div class="container">
+                  <div class="skills data-analysis">85%</div>
+                </div>
+                
+                <p class="cls-8">C Programming Language</p>
+                <div class="container">
+                  <div class="skills c-programming">80%</div>
+                </div>
+                
+                <p class="cls-8">Ubuntu</p>
+                <div class="container">
+                  <div class="skills ubuntu">75%</div><br><br>
+                </div>
+                
+                </div>
+            <div class="text-box">
+            <p class="cls-3">My skill set encompasses a broad range of capabilities tailored to investigations, intelligence, and cybersecurity. I specialize in OSINT (Open Source Intelligence) and cybersecurity investigations, leveraging advanced techniques to gather and analyze data from publicly available sources and digital footprints. Additionally, I possess expertise in test purchases, online-to-offline intelligence, and various cybersecurity techniques.
+
+                <br> <br>From proficiency in OSINT and cybersecurity investigations to expertise in data analysis, reporting, and countermeasures, I am well-equipped to tackle diverse challenges head-on. My commitment to continuous learning and staying updated ensures that I remain at the forefront of advancements in the field, ready to address evolving threats and opportunities effectively.<br<br</p>
+            </div>
+            </div>
+
+
+
+        </section>
+
+
+
+    <section id="My_Professional_Experience" >
+        <div class="container">
+        <br><br><br><text transform="translate(140 992)"  class="cls-5">
+            <tspan x="0" y="0">My Professional Experience</tspan>
+        </text></div>
+        <div class="container">
+        <p class="cls-1">Throughout my career, I have navigated roles in investigative research, brand protection, and cybersecurity with finesse and determination. From leading investigative research teams to spearheading efforts in test purchases and online to offline investigations, I have consistently delivered results while upholding the highest standards of integrity and professionalism. My tenure in intellectual property enforcement and brand protection has afforded me the opportunity to identify high-value targets, mitigate risks, and implement proactive measures to ensure compliance and security. Through each experience, I have cultivated a strategic mindset, a keen eye for detail, and an unwavering dedication to excellence.</p>
+        </div>
+
+    </section>
+    
+
+
+    <section id="My_Certifications" class="blacksection">
+        <div class="container">
+        <br><br><br><text transform="translate(140 527)"  class="cls-6">
+            <tspan x="0" y="0">My Certifications</tspan>
+        </text></div>
+
+        <div class="flex-container">
+            <div class="text-box">
+            <p class="cls-4">&bull;&emsp;Professional Certified Investigator (PCI)</p></div>
+            <div class="text-box">
+            <p class="cls-4">&bull;&emsp;CompTIA Security+</p> </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="My_Education">
+        <div class="container">
+            <br><br><br><text transform="translate(140 1541)"  class="cls-5">
+            <tspan x="0" y="0">My Education</tspan>
+        </text></div>
+        <div class="flex-container">
+            <div class="text-box">
+        <p class="cls-2">&bull;&emsp;Bachelor of Science in Computer Science</p></div>
+            <div class="text-box">
+        <p class="cls-2">&bull;&emsp;Bachelor of Linguistics in English</p></div>
+    </div>
+
+    </section>
+
+<script src="smoothScroll.js"></script>
+
+   
+
+</body>
+
+<footer class="footer">
+    <br><br><br>
+    <div class="container">
+    <a href="https://www.linkedin.com/in/Alona-Smatko-1a93a3aa/" class="icon-link">
+        <svg id="LinkedIn_icon" xmlns="http://www.w3.org/2000/svg" width="30.992" fill=#fff; fill-rule=evenodd; height="31.036" viewBox="0 0 30.992 31.036"style="margin-bottom: 7px;"><!-- 7 px bottom margin best fit --> 
+          <defs>
+            <style>
+              <!-- .cls-1 {
+                fill: #fff;
+              }
+      
+              .cls-1, .cls-2 {
+                fill-rule: evenodd;
+              } -->
+            </style>
+          </defs>
+          <path id="Path_2" data-name="Path 2" class="cls-1" d="M3.444,31.036H27.549a3.446,3.446,0,0,0,3.444-3.448V3.448A3.446,3.446,0,0,0,27.549,0H3.444A3.446,3.446,0,0,0,0,3.448V27.587A3.446,3.446,0,0,0,3.444,31.036Z" transform="translate(0)"/>
+          <path id="Path_3" data-name="Path 3" class="cls-2" d="M28.931,24.024h-3.89V19.116a1.881,1.881,0,0,0-2.128-2.1c-1.564,0-2.381.783-2.381,2.1v4.908H16.784V14.675h3.749v1.259a4.716,4.716,0,0,1,3.805-1.545c2.677,0,4.593,1.211,4.593,3.715ZM12.311,13.45c-1.277,0-2.311-.772-2.311-1.725S11.035,10,12.311,10s2.311.772,2.311,1.725S13.588,13.45,12.311,13.45ZM10.376,24.024h3.909V14.675H10.376Z" transform="translate(-3.969 -1.494)"/>
+        </svg>
+      </a>
+    
+      <a href="https://github.com/alon-asma-tko" class="icon-link">
+        <svg id="github-svgrepo-com" xmlns="http://www.w3.org/2000/svg" width="32.544" fill=#fff; height="31.036" viewBox="0 0 32.544 31.036"style="margin-bottom: 6px;"><!-- 6 px bottom margin best fit --> 
+            <defs>
+                <style>
+                    <!-- .cls-1 {
+                        fill: #fff;
+                    } -->
+                </style>
+            </defs>
+            <path id="Path_4" data-name="Path 4" class="cls-1" d="M16.272,0C7.286,0,0,6.948,0,15.518S7.286,31.036,16.272,31.036s16.272-6.947,16.272-15.518S25.258,0,16.272,0ZM20.83,27.34c-.094-1.214-.2-2.719-.2-3.328A2.893,2.893,0,0,0,19.348,21.6c4.7-.375,6.936-2.852,7.1-6.126a5.985,5.985,0,0,0-2.023-4.826,25.3,25.3,0,0,0-.14-3.829c-1.06-.291-3.531.953-4.222,1.486a13.748,13.748,0,0,0-7.187,0c-1.536-1.03-3.284-1.666-4.237-1.489a4.628,4.628,0,0,0-.142,3.826c-1.133.987-2.713,2.2-2.284,4.748.688,3.733,3.443,5.746,7.877,6.239A1.4,1.4,0,0,0,12.9,22.775c-2.978,1.172-3.829-.723-4.205-1.217-1.25-1.475-2.372-1.047-2.441-1.024a.186.186,0,0,0-.111.161c.063.318.743.641.777.667A5.49,5.49,0,0,1,8.4,23.54c1.323,2.075,4.4,1.214,4.428,1.232,0,.181-.021,1.708-.04,2.9a12.715,12.715,0,0,1-9.734-12.15C3.051,8.554,8.97,2.91,16.272,2.91S29.493,8.554,29.493,15.518A12.644,12.644,0,0,1,20.83,27.34Z"/>
+        </svg>
+    </a>
+    
+    <a href="https://www.linkedin.com/messaging/thread/new/?recipients=1a93a3aa" class="icon-link">
+        <svg id="speech-bubble-black-icon" xmlns="http://www.w3.org/2000/svg" width="31.32" fill=#fff; height="36.378" viewBox="0 0 31.32 36.378" style="margin-top: 20px;"><!-- 20 px top margin best fit --> 
+            <defs>
+                <style>
+                .cls-1 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                }
+                </style>
+            </defs>
+            <path id="Path_5" data-name="Path 5" class="cls-1" d="M15.094,27.589c-.779,3.222-1.722,6.117-4.6,8.79a22.539,22.539,0,0,0,12.883-8.79ZM24.314,0H7.005A7.193,7.193,0,0,0,0,7.328V20.261a7.193,7.193,0,0,0,7.005,7.328H24.314a7.194,7.194,0,0,0,7.006-7.328V7.328A7.194,7.194,0,0,0,24.314,0ZM7.421,10.4a3.005,3.005,0,0,1,0,6,3.005,3.005,0,0,1,0-6Zm16.478,0a3.005,3.005,0,1,1-2.87,3,2.939,2.939,0,0,1,2.87-3Zm-8.239,0a3.005,3.005,0,1,1-2.87,3,2.939,2.939,0,0,1,2.87-3Z"/>
+        </svg>
+    </a></div>
+</footer>
+
+
+
+
